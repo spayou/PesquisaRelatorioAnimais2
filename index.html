@@ -23,7 +23,16 @@
         .navbar .navbar-nav>li>.dropdown-menu>a:focus {
             /*background-color: rgba(33, 136, 56, 0.46) !important;*/
             background-color: rgba(225, 212, 31, .4);
+        }
 
+        #btn-logout {
+            background-color: goldenrod;
+            color: whitesmoke;
+        }
+
+        #btn-logout:hover {
+            background-color: #e3ab1f;
+            border-color: goldenrod;
         }
 
         .totalizador-search {
@@ -61,13 +70,19 @@
         }
 
         .box {
-            height: 370px;
+            height: 400px;
             width: 100%;
             background-color: #ffffff;
             margin-left: 24px;
             margin-right: 24px;
 
         }
+
+        .jumbotron {
+            height: 300px;
+            background-color:rgba(218, 165, 32, 0.426)
+        }
+
         /* @midia */
         @media (max-width: 568px) {
             .td-btn-options {
@@ -147,7 +162,7 @@
             <div class="row">
                 <div class="box rounded mt-2 border border-secondary">
                     <div class="col  mr-2 mt-2">
-                        <h1><span class="badge badge-warning col">#001</span></h1>
+                        <h1><span class="badge badge-warning col">#001</span> </h1>
                         <h3 class="blockquote text-center">Informações do Animal</h3>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Raça: Nelore</li>
@@ -157,6 +172,7 @@
                             <li class="list-group-item">Localização: Fazenda 1 - Ala 2</li>
                           </ul>
                     </div>
+                    <div class="col"><button type="button" class="btn btn-outline-warning btn-sm float-right"> <i class="fa fa-edit"></i></button></div>
                 </div>    
 
             </div>
@@ -197,8 +213,29 @@
         </table>
     </div>
     <!--/Atividades Recentes-->
+    <br>
+    <!--Grafico-->
+    <h1 class="blockquote text-center">Gráfico Peso x Idade</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <br><br><br>
+          <h1 class="blockquote text-center"> WORK IN PROGRESS... <br><br> <div class="spinner-border text-warning"></div></h1>
+        </div>      
+    </div>
+    <!--/Grafico-->
+    <!--Botões Finais-->
+    <div class="contaier">
+        <div class="row">
+            <div class="col"><button type="button" class="btn btn-outline-secondary btn-lg float-right">Relaório Custos</button></div>
+            <div class="col"><button type="button" class="btn btn-outline-secondary btn-lg ml-2">Baixa Animais</button></div>
+        </div>
+    </div>
+    <!--/Botões Finais-->
+    <br>
+
     </body>
-<!--Scrip-->
+
+    <!--Scrip-->
 <script type="text/javascript">
 
     function search(){
